@@ -11,13 +11,13 @@ services:
       - './.caddy:/root/.caddy'
     ports:
       - '80:80'
-      - '443:443'
+#      - '443:443'
     restart: always
   mysql:
     image: mysql:5.7.29
     volumes:
       - './mysql:/var/lib/mysql'
     restart: always
-    environment: 
+    environment:
       MYSQL_ROOT_PASSWORD: v2boardisbest
       MYSQL_DATABASE: v2board
