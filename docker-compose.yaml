@@ -3,7 +3,7 @@ services:
   www:
     image: tokumeikoi/lcrp
     volumes:
-      - './www:/www'
+      - './lotusboard:/www'
       - './wwwlogs:/wwwlogs'
       - './caddy.conf:/run/caddy/caddy.conf'
       - './supervisord.conf:/run/supervisor/supervisord.conf'
@@ -19,5 +19,5 @@ services:
       - './mysql:/var/lib/mysql'
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: v2boardisbest
-      MYSQL_DATABASE: v2board
+      MYSQL_ROOT_PASSWORD: 'DataBase_password'
+      MYSQL_DATABASE: DB_Name
