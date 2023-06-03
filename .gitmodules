@@ -1,4 +1,4 @@
 [submodule "lotusboard"]
 	path = lotusboard
 	url = https://github.com/lotusproxy/lotusboard.git
-        branch = main
+        branch = latest-stable
