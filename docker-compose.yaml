@@ -1,7 +1,7 @@
 version: '3'
 services:
   www:
-    image: ghcr.io/lotusproxy/SakuraNeko
+    image: ghcr.io/lotusproxy/sakuraneko
     volumes:
       - './lotusboard:/www'
       - './wwwlogs:/wwwlogs'
