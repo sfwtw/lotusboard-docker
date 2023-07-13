@@ -9,6 +9,8 @@ services:
       - './supervisord.conf:/run/supervisor/supervisord.conf'
       - './crontabs.conf:/etc/crontabs/root'
       - './.caddy:/root/.caddy'
+    links:
+      - mysql
     ports:
       - '80:80'
 #      - '443:443'
