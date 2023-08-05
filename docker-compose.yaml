@@ -22,4 +22,4 @@ services:
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: 'DataBase_password'
-      MYSQL_DATABASE: DB_Name
+      MYSQL_DATABASE: 'DB_Name'
